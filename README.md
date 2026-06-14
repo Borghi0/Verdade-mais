@@ -5,6 +5,10 @@ Repositório para gestão do projeto Verdade+ da disciplina Gerenciamento de Pro
 
 Desenvolver o planejamento de uma plataforma destinada à verificação de veracidade de conteúdos digitais e combate à desinformação.
 
+## GitHub Pages
+
+Acesse o site → https://borghi0.github.io/Verdade-mais/
+
 ## Artefatos do Repositório
 
 - Histórias de Usuário
@@ -12,6 +16,7 @@ Desenvolver o planejamento de uma plataforma destinada à verificação de verac
 - GitHub Issues
 - GitHub Project
 - Milestones (Sprints)
+- Primeira Sprint em ```docs/```
 
 ## Equipe
 
