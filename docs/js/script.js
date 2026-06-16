@@ -1,4 +1,4 @@
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
     "https://mmxlssamvdfoetyxwvfx.supabase.co",
     "sb_publishable_AeOpyWoVsXcs9IdlmdIf7g_SMio1TJs"
 );
@@ -26,7 +26,7 @@ if (loginForm) {
         }
         
         
-        const { data, error } = await supabase.auth.signInWithPassword({
+        const { data, error } = await supabaseClient.auth.signInWithPassword({
             email,
             password: senha
         });
@@ -83,7 +83,7 @@ if (cadastroForm) {
             return;
         }
         
-        const { data, error } = await supabase.auth.signUp({
+        const { data, error } = await supabaseClient.auth.signUp({
             email,
             password: senha,
             options: {data: {nome: nome}}
