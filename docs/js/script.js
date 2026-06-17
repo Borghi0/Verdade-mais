@@ -86,7 +86,10 @@ if (cadastroForm) {
         const { data, error } = await supabaseClient.auth.signUp({
             email,
             password: senha,
-            options: {data: {nome: nome}}
+            options: {
+                data: {nome: nome},
+                emailRedirectTo: "https://borghi0.github.io/Verdade-mais/"
+            }
         });
         
         if (!error) mensagem.textContent = "Cadastro realizado! Verifique seu e-mail.";
